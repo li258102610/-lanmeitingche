@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OilPriceViewContro">
+            <connections>
+                <outlet property="_tableview" destination="S7Q-7Y-gJd" id="X7r-8n-Lm7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tdX-Ko-6XR">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ufc-sy-9z8">
+                            <rect key="frame" x="6" y="20" width="44" height="44"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="ViA-iB-Lmc"/>
+                                <constraint firstAttribute="width" constant="44" id="gcp-18-nV7"/>
+                            </constraints>
+                            <state key="normal" image="我的icon"/>
+                            <connections>
+                                <action selector="userInfo:" destination="-1" eventType="touchUpInside" id="XAo-qL-W2m"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="油价" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmT-Hj-Z3q">
+                            <rect key="frame" x="125" y="19" width="70" height="37"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="22"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.15686274510000001" green="0.1843137255" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="1dh-64-YDr"/>
+                        <constraint firstItem="fmT-Hj-Z3q" firstAttribute="leading" secondItem="Ufc-sy-9z8" secondAttribute="trailing" constant="75" id="fv6-hf-BY3"/>
+                        <constraint firstItem="fmT-Hj-Z3q" firstAttribute="top" secondItem="tdX-Ko-6XR" secondAttribute="top" constant="19" id="jI6-XG-9U9"/>
+                        <constraint firstItem="fmT-Hj-Z3q" firstAttribute="bottom" secondItem="tdX-Ko-6XR" secondAttribute="bottomMargin" id="pfx-IY-wPG"/>
+                        <constraint firstItem="fmT-Hj-Z3q" firstAttribute="centerX" secondItem="tdX-Ko-6XR" secondAttribute="centerX" id="r5Y-vy-4PR"/>
+                        <constraint firstItem="Ufc-sy-9z8" firstAttribute="leading" secondItem="tdX-Ko-6XR" secondAttribute="leading" constant="6" id="vbI-sy-IQT"/>
+                        <constraint firstAttribute="bottom" secondItem="Ufc-sy-9z8" secondAttribute="bottom" id="xbq-jW-SfX"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="S7Q-7Y-gJd">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Q1w-8P-Izu"/>
+                        <outlet property="delegate" destination="-1" id="iNJ-xz-Wef"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="S7Q-7Y-gJd" firstAttribute="top" secondItem="tdX-Ko-6XR" secondAttribute="bottom" id="5za-13-9qe"/>
+                <constraint firstItem="S7Q-7Y-gJd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Boi-To-u1I"/>
+                <constraint firstAttribute="trailing" secondItem="S7Q-7Y-gJd" secondAttribute="trailing" id="Hp0-EA-mKq"/>
+                <constraint firstAttribute="bottom" secondItem="S7Q-7Y-gJd" secondAttribute="bottom" id="LAt-H6-gb9"/>
+                <constraint firstItem="tdX-Ko-6XR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eQc-is-wOK"/>
+                <constraint firstAttribute="trailing" secondItem="tdX-Ko-6XR" secondAttribute="trailing" id="grF-aH-mrL"/>
+                <constraint firstItem="tdX-Ko-6XR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="o96-tf-rIq"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="我的icon" width="22" height="22"/>
+    </resources>
+</document>

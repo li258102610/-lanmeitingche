@@ -1,0 +1,60 @@
+//
+//  PrefixHeader.pch
+//  Login
+//
+//  Created by ParkerLovely on 15/11/10.
+//  Copyright © 2015年 ParkerLovely. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "AppDelegate.h"
+
+//用于存放全局宏定义 或者 静态字符串
+#import "Constants.h"
+
+#import "AFNetworking.h"
+#import "UIKit+AFNetworking.h"
+
+#import "BlocksKit.h"
+#import "BlocksKit+MessageUI.h"
+#import "BlocksKit+UIKit.h"
+
+#import "MJRefresh.h"
+
+#import "MJExtension.h"
+
+#import "CocoaLumberjack.h"
+
+#ifdef DEBUG
+static const int ddLogLevel = DDLogLevelVerbose;
+#else
+static const int ddLogLevel = DDLogLevelError;
+#endif
+
+#import "MBProgressHUD.h"
+//#import <SVProgressHUD.h>
+#import "UIImageView+WebCache.h"
+#import "Masonry.h"
+#import "NSObject+Common.h"
+#import "MBProgressHUD.h"
+#import <Parse/Parse.h>
+#import "DXAlertView.h"
+#import "AppDelegate.h"
+#import "MMDrawerController.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <FBSDKShareKit/FBSDKShareKit.h>
+#import <ParseFacebookUtilsV4/ParseFacebookUtilsV4.h>
+#import "AAShareBubbles.h"
+
+#import "JHAPISDK.h"
+#import "JHOpenidSupplier.h"

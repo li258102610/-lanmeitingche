@@ -1,0 +1,44 @@
+//
+//  PrefixHeader.pch
+//  BaseProject
+//
+//  Created by jiyingxin on 15/10/21.
+//  Copyright © 2015年 Tarena. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "AppDelegate.h"
+
+//用于存放全局宏定义 或者 静态字符串
+#import "Constants.h"
+
+#import "AFNetworking.h"
+#import "UIKit+AFNetworking.h"
+
+#import "BlocksKit.h"
+#import "BlocksKit+MessageUI.h"
+#import "BlocksKit+UIKit.h"
+
+#import "MJRefresh.h"
+
+#import "MJExtension.h"
+
+#import "CocoaLumberjack.h"
+
+#ifdef DEBUG
+static const int ddLogLevel = DDLogLevelVerbose;
+#else
+static const int ddLogLevel = DDLogLevelError;
+#endif
+
+#import "MBProgressHUD.h"
+//#import <SVProgressHUD.h>
+#import "UIImageView+WebCache.h"
+#import "Masonry.h"
+#import "NSObject+Common.h"
+
+#endif /* PrefixHeader_pch */
